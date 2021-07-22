@@ -105,6 +105,8 @@
     <Content Include="content\img\avatars\avatar-4.png" />
     <Content Include="content\img\avatars\avatar-5.png" />
     <Content Include="content\img\bk-1.jpg" />
+    <Content Include="content\img\chains\bhe-clean.png" />
+    <Content Include="content\img\chains\ibb.png" />
     <Content Include="content\img\ct-2.jpg" />
     <Content Include="content\img\chains\beares.png" />
     <Content Include="content\img\chains\bhe.png" />
@@ -116,6 +118,8 @@
     <Content Include="content\img\ct-5.jpg" />
     <Content Include="content\js\bootstrap.bundle.min.js" />
     <Content Include="content\js\bootstrap.min.js" />
+    <Content Include="employees.aspx" />
+    <Content Include="settings.aspx" />
     <Content Include="sites.aspx" />
     <Content Include="default.aspx" />
     <Content Include="monitor.aspx" />
@@ -159,6 +163,20 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="employees.aspx.cs">
+      <DependentUpon>employees.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="employees.aspx.designer.cs">
+      <DependentUpon>employees.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="settings.aspx.cs">
+      <DependentUpon>settings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="settings.aspx.designer.cs">
+      <DependentUpon>settings.aspx</DependentUpon>
+    </Compile>
     <Compile Include="sites.aspx.cs">
       <DependentUpon>sites.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

@@ -105,7 +105,9 @@ $(document).ready(function(){
     //CHANGE PAGES
     var h = $('#home'),
         m = $('#mon'),
-        s = $('#sites');
+        s = $('#sites'),
+        e = $('#emp'),
+        set = $('#settings');
     h.click(function () {
         document.location.href = '/default.aspx'
     });
@@ -115,10 +117,25 @@ $(document).ready(function(){
     s.click(function () {
         document.location.href = '/sites.aspx'
     });
+    e.click(function () {
+        document.location.href = '/employees.aspx'
+    });
+    set.click(function () {
+        document.location.href = '/settings.aspx'
+    });
 
     $(function () {
         $('[data-toggle="tooltip"]').tooltip()
     })
+    
+    $('.main-body > div').addClass('animate__animated animate__fadeInDown');
 
+    $('body').prepend('<div id="loading"><div class="spinner-border text-primary" role="status"><span class="sr-only">Loading...</span></div></div>');
+
+    $(window).on('load', function () {
+        $('#loading').hide();
+    });
+
+    $('.emp-card').addClass('shadow-sm');
 });
 

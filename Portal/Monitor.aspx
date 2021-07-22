@@ -6,10 +6,10 @@
 <head runat="server">
     <title>LewHub</title>
     <link rel="shortcut icon" type="image/png" href="content/img/favicon.png" />
-    <link href="content/css/Chart.css" rel="stylesheet" />
     <link href="content/css/bootstrap.min.css" rel="stylesheet" />
 	<link rel="stylesheet" type="text/css" href="content/css/new.css" />
 	<link rel="stylesheet" type="text/css" href="content/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
@@ -48,15 +48,15 @@
                     <i class="fas fa-tachometer-alt"></i>
                     <span>Overview</span>
                 </li>
-                <li id="prod">
+                <li id="emp">
                     <i class="fas fa-user-friends"></i>
                     <span>Employees</span>
                 </li>
-                <li id="bd">
+                <li id="br">
                     <i class="fas fa-store"></i>
                     <span>Branches</span>
                 </li>
-                <li id="cc">
+                <li id="oo">
                     <i class="fas fa-door-open"></i>
                     <span>Opt Out</span>
                 </li>
@@ -359,7 +359,6 @@
     </div>
     </form>
     <div runat="server" id="script_container"></div>
-    <script src="content/js/Chart.js"></script>
     <script src="content/js/bootstrap.bundle.min.js"></script>
     <script src="content/js/script.js"></script>
     <script>

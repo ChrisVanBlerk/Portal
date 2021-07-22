@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="Portal._default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="settings.aspx.cs" Inherits="Portal._settings" %>
 
 <!DOCTYPE html>
 
@@ -13,11 +13,6 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
-    <%--<div id="loading">
-        <div class="spinner-border text-primary" role="status">
-            <span class="sr-only">Loading...</span>
-        </div>
-    </div>--%>
     <form id="form1" runat="server">
     <div class="main-container">
         <div class="main-header dark-2 shadow">
@@ -49,7 +44,7 @@
         </div>
         <div class="nav shadow-r">
             <ul>
-                <li id="home" class="active-nav">
+                <li id="home">
                     <i class="fas fa-tachometer-alt"></i>
                     <span>Overview</span>
                 </li>
@@ -73,26 +68,16 @@
                     <i class="fas fa-globe-africa"></i>
                     <span>Sites</span>
                 </li>
-                <li id="settings">
+                <li id="settings" class="active-nav">
                     <i class="fas fa-cog"></i>
                     <span>Settings</span>
                 </li>
             </ul>
         </div>
         <div class="main-body">
-            <div class="line grid-wrap">   
+            <div class="line grid-wrap set-wrap">   
                 <!---->        
-                <div class="" style="grid-column: span 1;grid-row: span 2;"></div>
-                <div class="" style="grid-column: span 1;grid-row: span 1;"></div>
-                <div class="" style="grid-column: span 2;grid-row: span 1;"></div>
-                <div class="" style="grid-column: span 1;grid-row: span 1;"></div>
-                <div class="" style="grid-column: span 2;grid-row: span 3;"></div>
-                <div class="" style="grid-column: span 2;grid-row: span 2;"></div>
-                <div class="" style="grid-column: span 1;grid-row: span 3;"></div>
-                <div class="" style="grid-column: span 2;grid-row: span 1;"></div>
-                <div class="" style="grid-column: span 1;grid-row: span 1;"></div>
-                <div class="" style="grid-column: span 2;grid-row: span 1;"></div>
-                <div class="" style="grid-column: span 1;grid-row: span 1;"></div>
+                <div class="" style="grid-column: span 10;grid-row: span 10;"></div>
             </div>
         </div>
     </div>

@@ -425,7 +425,21 @@ body {
 }
 .active-nav {
     background:var(--main);
+    position: relative;
 }
+/*.active-nav:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -15px;
+    margin: auto;
+    width: 0; 
+    height: 0; 
+    border-top: 1rem solid transparent;
+    border-bottom: 1rem solid transparent;
+    border-left: 1rem solid var(--main);
+}*/
 .active-nav:hover {
     background:var(--secondary)!important;
 }
@@ -637,7 +651,7 @@ body {
 }
 /*BODY*/
 .main-body {
-    padding-left: 3%;
+    padding-left: 3.1%;
     display: flex;
     flex-direction: column;
     overflow-y: scroll; /* Hide scrollbars */
@@ -1538,12 +1552,12 @@ body {
     margin: 2px;
     transition: 0.1s;
 }
-.grid-wrap > div:hover {
+.grid-wrap > div:hover,.sites-wrap > div:hover {
     background: rgba(192, 57, 43,0.8);
     transition: 0.1s;
 }
 .grid-wrap > div > div {
-    height: 100%;
+    height: 100%;s
 }
 .grid-wrap > div > div iframe {
     height: 100%;
@@ -1862,7 +1876,6 @@ body {
 }
 .mon-wrap > div > div > div > h5 {
     font-size:0.9rem;
-    margin-left: 8px;
     font-weight:100;
     font-style:italic;
 }
@@ -1927,9 +1940,173 @@ body {
     float:right;
     color:#9a9a9a;
 }
-
-
-
+/*SITES*/
+.sites-wrap {
+    display:block;
+    overflow:hidden;
+}
+.sites-wrap .sw-row {
+    height: 100px;
+}
+.sites-wrap .sw-row h3 {
+    width: 100%;
+    background: rgba(0,0,0,0.4);
+    padding: 2px 0;
+}
+.sites-wrap > div a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    position: relative;
+}
+.sites-wrap > div img {
+    height: 100%;
+    margin: 0 auto;
+    display:block
+}
+.sites-wrap > div #bhe_img {
+    height: auto;
+    width: 100%;
+    padding-top: 0.6rem;
+}
+.sites-wrap .sw-head {
+    display: block;
+    width: 100%;
+    background: rgba(235, 77, 75,0.8);
+    align-self: center;
+}
+.sites-wrap .sw-head:hover {
+    background: rgba(235, 77, 75,0.8);
+}
+.sites-wrap .sw-box {
+    width: 10%;
+    height:6%;
+    float: left;
+    margin: 4px;
+    border-radius:2px;
+    padding: 8px 2px;
+}
+.sites-wrap .sw-box h5 {
+    line-height: 3rem;
+}
+.sites-wrap .sw-box span {
+    position: absolute;
+    top: -4px;
+    left: 2px;
+    line-height:0.9rem;
+    padding: 2px 4px;
+    font-size: 0.8rem;
+}
+.dev {
+    background: var(--main);
+}
+.uat {
+    background: var(--secondary);
+}
+.live {
+    background: var(--green);
+}
+/*SETTINGS*/
+.set-wrap {
+}
+.set-wrap > div:hover {
+    background: linear-gradient(to top right, rgba(51, 51, 51, 0.9), rgba(68, 68, 68, 0.9));
+}
+/*EMPPLOYEE*/
+.emp-wrap {
+    display: block;
+    padding: 2px;
+}
+.emp-box {
+    width: 100%;
+    height: 100%;
+}
+.emp-head {
+    background: rgba(20, 170, 207,0.4);
+    height: 10%;
+}
+.emp-body {
+    height: 89.5%;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 25% 25% 25% 25%;
+    padding: 2px;
+}
+.emp-card {
+    grid-column: span 1;
+    grid-row: span 1;
+    margin: 2px;
+    transition: 0.1s;
+    background: rgba(245,245,245,0.1);
+    border-radius: 2px;
+    display: flex;
+}
+.emp-card .ec-pic {
+    flex: 1;
+    place-self: center;
+}
+.emp-card .ec-pic img {
+    width: 100px
+}
+.emp-card .ec-info {
+    flex: 2;
+    display:flex;
+    flex-direction: column;
+    position: relative;
+}
+.emp-card .ec-info > div {
+    flex: 1;
+    text-align: left;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+}
+.emp-card .ec-info > div::after last-child {
+    border-bottom: none;
+}
+.emp-card .ec-info > div > h1 {
+    font-size: 1.1rem;
+    flex: 1;
+}
+.emp-card .ec-info > div > h2 {
+    font-size: 1rem;
+    flex: 1;
+}
+.emp-card .ec-info > div > p {
+    font-size: 0.9rem;
+    flex: 1;
+}
+.emp-card .ec-info > i {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+}
+.emp-card .ec-info > .fa-circle {
+    color: var(--green);
+}
+/*LOADING*/
+#loading {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(255,255,255,0.1);
+  z-index: 99;
+}
+#loading > div {
+  z-index: 100;
+}
+#loading .spinner-border {
+    width: 5rem;
+    height: 5rem;
+}
 
 
 /*THEMES*/
